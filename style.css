@@ -40,13 +40,6 @@ input[type=text]:focus {
   gap: 5px;
   height: 200px;
   width: auto;
-  
-  /* background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 ); */
 }
 
 p{
@@ -65,8 +58,15 @@ p{
 }
 
 .button{
-  padding: 5px;
+  padding: 6px 10px;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.775);
   cursor: pointer;
+  background-color: hsl(169, 85%, 40%);
+  color: #fafafa;
+}
+
+.button:hover{
+  background-color: hsl(169, 85%, 45%)
 }

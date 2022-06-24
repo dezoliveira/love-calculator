@@ -2,7 +2,7 @@ function calculate(){
   let personA = document.getElementById('personA').value
   let personB = document.getElementById('personB').value
 
-  if(personA != "" || personB != "" || !isNaN(personA) || !isNaN(personB)){
+  if(personA != "" || personB != ""){
 
     let requestOptions = {
       method: 'GET',
@@ -24,7 +24,14 @@ function calculate(){
   }
 
   else{
-    alert("cu")
+
+    Swal.fire({
+      icon: 'error',
+      title: 'Opa!',
+      text: 'Você esqueceu de digitar os nomes! 😅😅😅',
+      confirmButtonText: 'Foi mal!'
+    })
+
   }
   
 }
