@@ -17,7 +17,6 @@ function calculate(){
 
       .then((result) => result.json())
       .then(data => {
-        console.log(data)
         showMessage(data)
       })
       .catch(error => console.log('error', error));
@@ -37,9 +36,9 @@ function showMessage(data){
 
     printMessage.classList.remove('hidden')
 
-    if (message.match('Congratulations! Good choice.')){
+    if (message.match('Congratulations! Good choice')){
       message = message.replace(
-        'Congratulations! Good choice.',
+        'Congratulations! Good choice',
         'Parabéns! Boa escolha! 💕'
       )
     }
