@@ -104,5 +104,6 @@ body{
 
   .container .message {
     min-width: 250px;
+    padding: 25px;
   }
 }
