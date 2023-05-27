@@ -95,3 +95,14 @@ body{
 .hidden {
   display: none;
 }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .form h1 {
+    font-size: 25px;
+  }
+
+  .container .message {
+    min-width: 250px;
+  }
+}
